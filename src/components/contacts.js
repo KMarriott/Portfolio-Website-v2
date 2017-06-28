@@ -4,12 +4,11 @@ import React, { Component } from 'react';
 class Contacts extends Component {
   render(){
     return(
-      <div>
-      <div>My Contacts Page</div>
+      <div className="center-text">
 
-      <br/>Email
-      <br/>Linkedin
-      <br/>Github
+      <br/><a href="mailto:khemmarriott@gmail.com">Email</a>
+      <br/><a href="https://www.linkedin.com/in/khemmarriott/">Linkedin</a>
+      <br/><a href="https://github.com/kmarriott">Github</a>
 
 
       </div>

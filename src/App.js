@@ -20,7 +20,7 @@ class App extends Component {
     super();
 
     this.state = {
-      default: true,
+      home_click: true,
       about_click: false,
       project_click: false,
       contact_click: false
@@ -29,17 +29,24 @@ class App extends Component {
     this.handleClick = function(e, type) {
       let new_state = this.state;
 
-      new_state["default"] = false
+      new_state["home_click"] = false
       new_state["about_click"] = false
       new_state["project_click"] = false
       new_state["contact_click"] = false
 
 
-
       new_state[type+"_click"] = !new_state[type+"_click"]
-      console.log(new_state[type+"_click"])
-      console.log(new_state)
+
+
+      if(new_state["home_click"] === false &&
+      new_state["project_click"] === false &&
+      new_state["contact_click"] === false){
+      new_state["default"] = true
+    }
+
       this.setState(new_state);
+
+
     }
   }
 
@@ -50,13 +57,13 @@ class App extends Component {
     return (
       <div className="flex-column">
 
-      <Name/>
+      <Name handleClick={this.handleClick.bind(this)}/>
       {
       <Buttons handleClick={this.handleClick.bind(this)} state={this.state}/>
       // <Home/>
       }
 
-      {this.state.default ? <Text title={"Welcome"}/> : ""}
+      {this.state.home_click ? <Text title={"Welcome"}/> : ""}
       {this.state.about_click ? <Text title={"About"}/> : ""}
       {this.state.project_click ? <Text title={"Projects"}/> : ""}
       {this.state.contact_click ? <Text title={"Contact"}/> : ""}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Traits from './trait-slider.js';
 
 
 class Title extends Component {
@@ -8,7 +9,12 @@ class Title extends Component {
       <div className="flex-center">
       <div>
 
-      <div className="typewriter title">{this.props.title}!</div>
+      <div className="title">
+      {
+        (this.props.title == "Welcome") ? <Traits/>
+      :<div className="typewriter" >{this.props.title}</div>
+    }
+      </div>
       </div>
       </div>
     )

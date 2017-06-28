@@ -35,6 +35,13 @@ body, .background{
   align-self: center;
 }
 
+.welcome-text{
+  padding: 1%;
+  text-align: center;
+  width: 100%
+}
+
+
 
 @import url('https://fonts.googleapis.com/css?family=Doppio+One|Open+Sans');
 
@@ -111,7 +118,7 @@ p{
 
 .text{
   padding-top:5%;
-  box-shadow: 2px 2px 2px black;
+  /*box-shadow: 2px 2px 2px black;*/
 }
 
 .typewriter{

@@ -1,29 +1,48 @@
 import React, { Component } from 'react';
 import Title from './title.js';
-
+import Traits from './trait-slider.js';
+import About from './about.js';
+import Projects from './projects.js';
+import Contacts from './contacts.js';
 
 class Text extends Component {
   constructor(){
     super();
   }
 
+  componentWillMount(){
+    this.setState(this.props.state)
+  }
+
   render(){
+
+    var body = ""
+    if(this.props.title==="Welcome"){
+    }
+    else if(this.props.title==="About"){
+      body = <About/>
+    }
+    else if(this.props.title==="Projects"){
+        body = <Projects/>
+    }
+    else if(this.props.title==="Contact"){
+        body = <Contacts/>
+    }
+
 
     return(
       <div className="flex-center flex-column text">
 
       <div className="flex-center">
       <div>
-
       <Title title={this.props.title}/>
       </div>
       </div>
 
       <div>
-      <p>
 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      {body}
+
       </div>
 
       </div>

@@ -6,7 +6,7 @@ class Bottom extends Component {
       <div>
       <br/><br/>
       <div className='bottom'>
-      Made in React - Lion Icon by Robert Bjurshagen
+
       </div>
       </div>
     )

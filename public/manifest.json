@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Khem Marriott",
+  "name": "Khem Marriott Portfolio",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "lion_icon.ico",
       "sizes": "192x192",
       "type": "image/png"
     }

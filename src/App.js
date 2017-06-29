@@ -69,7 +69,7 @@ class App extends Component {
       {this.state.contact_click ? <Text title={"Contact"}/> : ""}
 
 
-
+      
       <Bottom/>
 
       </div>

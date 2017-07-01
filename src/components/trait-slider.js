@@ -130,14 +130,15 @@ render() {
 
 		let listtraits =[
 		<div key={traits[this.state.count]}
-		className="enter-up typewriter">
+		className="typewriter trait-item">
 		{traits[this.state.count]}
 		</div>]
 
 
-		return <div className="flex-center"><div>
+		return <div className="flex-center">
 		{listtraits}
-		</div></div>
+		</div>
+
 	}
 
 }

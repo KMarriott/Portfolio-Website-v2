@@ -34,6 +34,9 @@ class Text extends Component {
       <div className="flex-center flex-column text">
 
       <div className="flex-center">
+
+
+
       <div>
       <Title title={this.props.title}/>
       </div>

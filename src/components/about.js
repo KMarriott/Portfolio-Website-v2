@@ -26,8 +26,7 @@ class About extends Component {
 
 
             <div>
-
-            <br/><br/>I am a 22 year old young man, living in New York and working as a Web Developer. I have a history or working at large and small companies, but my number one priority is to get my work done professionally and effectively.
+            I am a 22 year old young man, living in New York and working as a Web Developer. I have a history or working at large and small companies, but my number one priority is to get my work done professionally and effectively.
 
             <br/><br/>For some of my history, I was born in New York, but grew up in Los Angeles, California. A sweet but introverted boy,  I spent most of my free time during my developmental years on online communities growing really familiar with online culture. In other words, a total geek.
 

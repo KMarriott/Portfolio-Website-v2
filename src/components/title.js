@@ -12,7 +12,7 @@ class Title extends Component {
       <div className="title">
       {
         (this.props.title == "Welcome") ? <Traits/>
-      :<div className="typewriter" >{this.props.title}</div>
+      :<div className="typewriter title-page" >{this.props.title}</div>
     }
       </div>
       </div>

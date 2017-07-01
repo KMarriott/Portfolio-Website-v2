@@ -20,12 +20,21 @@ body, .background{
 
 }
 
+.inline{
+  display: inline-block;
+}
+
+.title-page{
+  padding-bottom: 3vw;
+}
 
 .lion{
+  position: absolute;
+  top: 30vw;
   padding-top: 5%;
   width: 30vw;
   z-index: 0;
-  animation: fade-in 3s
+  animation: fade-in-out 5s infinite;
 }
 .w-lion{
   position: absolute;
@@ -133,12 +142,6 @@ p{
   color: var(--color-7);
 }
 
-.lion-credit{
-  font-size: 10px;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-}
 
 .title{
   font-family: 'Doppio One', sans-serif;
@@ -173,17 +176,19 @@ margin: 1% 10% 10% 10%;
 .project-box-container{
   display: flex;
   align-self: center;
+  flex-direction: row;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .project-box{
   background-color: var(--second-bg-color);
+  font-family: 'Doppio One', sans-serif;
   color: var(--second-text-color);
   border-style: solid;
-  border-color: var(--second-bg-color);
-  padding: 3vw;
-  margin: 3vw;
+  padding: 3em;
+  margin: auto;
+  width: 30vw;
 }
 
 .project-box:hover{
@@ -194,8 +199,7 @@ margin: 1% 10% 10% 10%;
 
 .project-text{
   display: flex;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin: auto;
   align-self: center;
   align-items: center;
 }
@@ -204,9 +208,7 @@ margin: 1% 10% 10% 10%;
   display: flex;
   flex-direction: column;
   align-self: center;
-  align-items: center;
-  margin-left: 10vw;
-  margin-right: 10vw;
+margin: auto;
 }
 
 .project-title{
@@ -225,6 +227,7 @@ margin: 1% 10% 10% 10%;
   background-color: var(--color-3);
   padding: 5% 5% 5% 5%;
   margin-top: 5%;
+  /*margin: auto;*/
   box-shadow: 2px 2px 2px black;
 }
 
@@ -305,4 +308,9 @@ svg{
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@keyframes fade-in-out {
+  from, to { opacity: 1; }
+  50% { opacity: .80; }
 }

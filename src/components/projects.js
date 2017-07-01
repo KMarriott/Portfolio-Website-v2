@@ -44,9 +44,9 @@ class Projects extends Component {
 }
 
 
-      <div className="project-box-container">
-
       <div className="project-description">
+
+      <div className="project-box-container">
       <div className="project-box" onClick = {(e) => this.handleClick(e, "RPG")}>RPG Game</div>
       <div className="project-box" onClick = {(e) => this.handleClick(e, "VPet")}>Virtual Pet</div>
       {
@@ -57,6 +57,7 @@ class Projects extends Component {
 
 { this.state.RPG_click ? <RPG_Game/>: ""}
 { this.state.VPet_click ? <VPet/>: ""}
+
 {
 
   // <br/><br/>My Virtual Pet CRUD + API

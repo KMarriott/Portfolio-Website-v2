@@ -41,13 +41,18 @@ class Text extends Component {
       <Title title={this.props.title}/>
       </div>
       </div>
-      {(this.props.title==="Welcome") ? <img className="lion flex-center" src={require("../lion_icon.svg")}/>
-      : ""}
 
+      <div className="all">
+      {
+        (this.props.title==="Welcome") ?
+        <img className="lion flex-center" src={require("../lion_icon.svg")}/>
+        : ""}
+      </div>
 
       <div className="flex-center">
 
       {body}
+
 
       </div>
       <div>

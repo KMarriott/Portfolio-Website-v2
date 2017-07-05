@@ -29,13 +29,18 @@ body, .background{
 }
 
 .lion{
-  position: absolute;
-  top: 30vw;
-  padding-top: 5%;
-  width: 30vw;
+  display: inline;
+  margin: auto;
+  width: 50%;
   z-index: 0;
   animation: fade-in-out 5s infinite;
 }
+
+.all{
+  width: 100vw;
+  padding-top: 5%;
+}
+
 .w-lion{
   position: absolute;
   width:3em;

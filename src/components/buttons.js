@@ -7,8 +7,10 @@ class Buttons extends Component {
       <div >
       <div className="info-button " onClick = {(e) => this.props.handleClick(e, "about")}>About</div>
       <div className="info-button " onClick = {(e) => this.props.handleClick(e, "project")}>Projects</div>
-      <div className="info-button " onClick = {(e) => this.props.handleClick(e, "contact")}>Contact</div>
-      </div>
+{
+        // <div className="info-button " onClick = {(e) => this.props.handleClick(e, "contact")}>Contact</div>
+
+}      </div>
     )
   }
 }

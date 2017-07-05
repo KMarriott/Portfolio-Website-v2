@@ -4,7 +4,6 @@ class Bottom extends Component {
   render(){
     return(
       <div>
-      <br/><br/>
       <div className='bottom'>
 
       </div>

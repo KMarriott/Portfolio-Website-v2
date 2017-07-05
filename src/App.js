@@ -55,7 +55,7 @@ class App extends Component {
   render() {
     console.log(this.state)
     return (
-      <div className="flex-column">
+      <div className="flex-column main-body">
 
       <Name handleClick={this.handleClick.bind(this)}/>
       {

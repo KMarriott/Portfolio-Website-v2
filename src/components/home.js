@@ -1,14 +1,24 @@
 import React, { Component } from 'react';
-
+import Contacts from './contacts'
 class Home extends Component {
   render(){
     return(
-      <div>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <br/>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <div className="center-text">
+      {
+        // <div>
+        // Welcome!
+        // </div>
+        // <div>
+        // I am an independent Web & Software Developer based in New York, New York.
+        // </div>
+        // <div>
+        // I work primarily with React, Node.js, and Ruby on Rails.
+        // </div>
+        // <div>
+        // Check out my About me or Projects if you are interested in learning more about me.
+        // </div>
+        // <Contacts/>
+      }
         </div>
     )
   }

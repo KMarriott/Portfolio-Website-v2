@@ -4,8 +4,8 @@ import React, { Component } from 'react';
 class Contacts extends Component {
   render(){
     return(
-      <div className="center-text flex-row contact flex-center">
-
+      <div className="center-text  contact flex-center ">
+      <div className = " flex-row auto_margin">
       <a href="mailto:khemmarriott@gmail.com">Email
       <img src={require("../close-envelope.svg")}/></a>
 
@@ -24,7 +24,7 @@ class Contacts extends Component {
       </a>
 
 
-
+      </div>
       </div>
 
 

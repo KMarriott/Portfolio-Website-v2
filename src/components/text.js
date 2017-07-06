@@ -4,7 +4,7 @@ import About from './about.js';
 import Projects from './projects.js';
 import Contacts from './contacts.js';
 import Home from './home.js';
-
+import Buttons from './buttons.js';
 
 class Text extends Component {
   constructor(){
@@ -43,6 +43,9 @@ class Text extends Component {
       <Title title={this.props.title}/>
       </div>
       </div>
+      <Buttons handleClick={this.props.handleClick.bind(this)} state={this.state}/>
+
+
 {
       // <div className="all">
       // {

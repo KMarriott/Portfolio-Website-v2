@@ -33,7 +33,7 @@ class Projects extends Component {
 
   render(){
     return(
-      <div className="center-text flex-center flex-column">
+      <div className="center-text flex-center flex-column fade-in">
 {
       // <br/><br/>Worked for:
       // <br/>DJ

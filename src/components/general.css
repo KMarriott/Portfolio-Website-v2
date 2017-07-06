@@ -14,13 +14,11 @@
 }
 
 
-.main-body{
-}
-
 
 body, .background{
   color: var(--main-text-color);
   background:  var(--main-bg-color);
+
 
 }
 
@@ -28,9 +26,7 @@ body, .background{
   display: inline-block;
 }
 
-.title-page{
-  padding-bottom: 3vw;
-}
+
 
 .lion{
   display: inline;
@@ -144,6 +140,12 @@ body, .background{
 }
 
 
+.fade-in{
+
+  animation:
+  fade-in 3s
+}
+
 
 .about-snippet{
   background-color: var(--second-bg-color);
@@ -163,19 +165,20 @@ p{
 }
 
 .info-button{
+  display: flex;
+  flex-direction: column;
   font-family: 'Doppio One', sans-serif;
-  font-size: 6vh;
-  color: var(--second-text-color);
-  width: 30vh;
+  font-size: 3vh;
+  color: var(--second-bg-color);
   text-align: center;
   /*height: 3em;*/
-  background-color: var(--second-bg-color);
+  margin: 1vw;
+  /*background-color: ;*/
   cursor: pointer;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   z-index: 10;
-  padding: 5%;
+  /*padding: 5%;*/
 }
 
 .info-button:hover{
@@ -187,8 +190,9 @@ p{
 
 
 .button-container{
-  position: absolute;
-  right: 0;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
 }
 
 
@@ -212,8 +216,7 @@ p{
 }
 
 .text{
-  padding-top:5%;
-  /*box-shadow: 2px 2px 2px black;*/
+  padding-top: 1vh;
 }
 
 .typewriter{
@@ -229,17 +232,35 @@ p{
 }
 
 .about-body{
+
+font-family: 'Doppio One', sans-serif;
 align-items: center;
-margin: 1% 10% 10% 10%;
+margin: auto;
+width: 80%;
+padding-bottom: 10vh;
 
 }
 
+
+
+.project-description{
+  display: flex;
+  flex-direction: column;
+
+  /*padding-top: 5vw;*/
+  /*margin-left: 10vw;*/
+  /*margin-right: 10vw;*/
+}
+
+
 .project-box-container{
+
+  padding-top: 5%;
+  margin-left: 1vw;
   display: flex;
   align-self: center;
   flex-direction: row;
-  margin-left: 10%;
-  margin-right: 10%;
+  float: left;
 }
 
 .project-box{
@@ -247,9 +268,11 @@ margin: 1% 10% 10% 10%;
   font-family: 'Doppio One', sans-serif;
   color: var(--second-text-color);
   border-style: solid;
-  padding: 3em;
+  padding: 3vh;
   margin: auto;
-  width: 30vw;
+  width: 25vh;
+  transition-property: all;
+    transition-delay: 1s;
 }
 
 .project-box:hover{
@@ -280,27 +303,20 @@ margin: auto;
 }
 
 .project-border{
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  /*border-style: solid;*/
-  /*border-color: var(--second-bg-color);*/
-  background-color: var(--color-3);
-  padding: 5% 5% 5% 5%;
-  margin-top: 5%;
-  /*margin: auto;*/
-  box-shadow: 2px 2px 2px black;
+
 }
 
 .project-image{
-  overflow: hidden;
-  height: 25vw;
-  width: auto;
+width: 80%;
+padding-top: 4vh;
+padding-bottom: 1vh;
 }
 
+
+
 .project-desc-text{
-  padding: 1% 5% 5% 5%;
-  width: 20vw;
+  padding: 1% 5% 1% 5%;
+  width: 70%;
   margin-top: 1vw;
   align-self: center;
   /*display: flex;*/
@@ -310,7 +326,9 @@ margin: auto;
     background-color: var(--second-bg-color);
       color: var(--color-2);
 }
-
+.spacing{
+  height: 5vh;
+}
 .visit-link{
   font-family: 'Doppio One', sans-serif;
   font-size: 2vw;
@@ -323,15 +341,19 @@ a{
 }
 
 .contact{
-  padding: 1vw;
+  padding: 1vh;
+}
+
+.contact-links{
+  padding: 5vh;
 }
 
 .contact img, .contact svg{
   padding: 3vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
-  height: 6vw;
-  width: 6vw;
+  height: 6vh;
+  width: 6vh;
      fill: var(--color-6);
 }
 
@@ -345,15 +367,10 @@ a{
 .contact a:hover, .contact img:hover, .contact svg:hover{
   color: var(--color-3);
   fill: var(--color-3);
-  border-radius: 5%
+  border-radius: 5%;
+  cursor: pointer;
 }
 
-
-.project-description{
-  /*padding-top: 5vw;*/
-  /*margin-left: 10vw;*/
-  /*margin-right: 10vw;*/
-}
 
 
 
@@ -361,7 +378,9 @@ a{
   margin: auto;
 }
 
+
 .crop {
+  padding: 3vh;
       /*width: 100vh;
       height: 100vh;*/
     /*overflow: hidden;*/

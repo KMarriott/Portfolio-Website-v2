@@ -6,7 +6,7 @@ class About extends Component {
     return(
 
 
-      <div className="test">
+      <div className="test fade-in">
       <div className="flex-column about-body">
 
       {

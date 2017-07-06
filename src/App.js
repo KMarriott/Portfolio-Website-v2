@@ -72,20 +72,16 @@ class App extends Component {
 
       <div className="flex-column main-body">
       <div >
+
       <Name handleClick={this.handleClick.bind(this)} hamburgerClick={this.hamburgerClick.bind(this)}/>
-      {
-        this.state.hamburger ?
-      ""
-      :
-    <Buttons handleClick={this.handleClick.bind(this)} state={this.state}/>}
-      </div>
+          </div>
 
-      {this.state.home_click ? <Text title={"Welcome"}/> : ""}
-      {this.state.about_click ? <Text title={"About"}/> : ""}
-      {this.state.project_click ? <Text title={"Projects"}/> : ""}
-      {this.state.contact_click ? <Text title={"Contact"}/> : ""}
+      {this.state.home_click ? <Text title={"Welcome"} handleClick={this.handleClick.bind(this)} state={this.state}/> : ""}
+      {this.state.about_click ? <Text title={"About"} handleClick={this.handleClick.bind(this)} state={this.state}/> : ""}
+      {this.state.project_click ? <Text title={"Projects"} handleClick={this.handleClick.bind(this)} state={this.state}/> : ""}
+      {this.state.contact_click ? <Text title={"Contact"} handleClick={this.handleClick.bind(this)} state={this.state}/> : ""}
 
-
+      <div className="spacing"></div>
 
       <Bottom/>
 

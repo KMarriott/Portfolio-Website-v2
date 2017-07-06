@@ -13,14 +13,7 @@ class Name extends Component {
 
 
 
-      <div className="blink">Khem Marriott </div>
 
-      <div className="hamburger-container fade-in" onClick={this.props.hamburgerClick.bind(this)}>
-      <div className="hamburger-line"> </div>
-      <div className="hamburger-line"> </div>
-      <div className="hamburger-line"> </div>
-
-      </div>
 
       </div>
     )

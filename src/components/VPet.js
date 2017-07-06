@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class RPG_game extends Component {
   render(){
     return(
-      <div className="project-text">
+      <div className="project-text fade-in">
 
       <div className="project-item">
 

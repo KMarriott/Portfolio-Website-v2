@@ -3,7 +3,7 @@ import Contacts from './contacts'
 class Home extends Component {
   render(){
     return(
-      <div className="flex-column welcome-body">
+      <div className="flex-column welcome-body fade-in">
 
         <div>
         Welcome!

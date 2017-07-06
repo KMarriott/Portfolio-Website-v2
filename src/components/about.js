@@ -9,23 +9,22 @@ class About extends Component {
       <div className="test fade-in">
       <div className="flex-column about-body">
 
-      {
-      // <div> 22 / New York / Some type of Nerd </div>
-      //
-      //
-      // <div>Skills</div>
-      //
-      // <div>
-      // Javascript (ES6) - Node.js, React, Express, Handlebars, Mocha Chai,jQuery
-      // Ruby - Ruby on Rails, Sinatra
-      // Phyton - Django
-      // Javascript
-      // </div>
-    }
+
+
+
 
     <div className="crop">
         <img src={require("../unnamed.jpg")}/>
     </div>
+
+    <div> 22 / Male / New York </div>
+
+    <div className="about-skills">
+    <br/>Skills:
+    <br/>Javascript (ES6), Node.js, React, Express, Mocha Chai, jQuery, Ruby - Ruby on Rails, Sinatra, HTML, CSS
+
+    </div>
+
 
             <div>
             I am a 22 year old young man, living in New York and working as a Web Developer. I have a history or working at large and small companies. My number one priority is completing projects professionally, efficiently and effectively.

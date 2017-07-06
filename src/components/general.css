@@ -70,7 +70,7 @@ body, .background{
 .welcome-text{
   padding: 1%;
   text-align: center;
-  width: 100%
+  width: 100%;
 }
 
 
@@ -79,26 +79,62 @@ body, .background{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 50vh;
+  height: auto !important;
+  height: 50vh;
+  width: 50%;
+  margin: auto;
+  color: var(--main-text-color);
+  font-family: 'Doppio One', sans-serif;
+  padding-top: 3%;
+}
 
+.welcome-body a{
+    color: var(--main-text-color);
 }
 
 .center-text{
   text-align: center;
+  flex-direction: column;
 }
 
 
 @import url('https://fonts.googleapis.com/css?family=Doppio+One|Open+Sans');
 
 .name{
-   font-size: 6vw;
+  display: flex;
+  flex-direction: row;
+   font-size: 10vh;
    font-family: 'Doppio One', sans-serif;
-   border-bottom-style: solid;
    background-color: var(--second-bg-color);
    color: var(--second-text-color);
+   padding-bottom: 1vh;
 
-   border-color: var(--second-bg-color);
-   /*box-shadow: 2px 2px 2px black;*/
-   cursor: pointer;
+
+}
+
+.hamburger-container{
+  width: 7%;
+  flex-direction: column;
+  justify-content: center;
+  height: auto !important;
+  position: absolute;
+  right: 1vw;
+  top: 2vh;
+  padding: 1vh;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+.hamburger-line{
+  margin-top:10%;
+  margin-bottom:auto 10%;
+  /*margin: auto;*/
+  width: 100%;
+  height: 1.5vh;
+
+  background-color: var(--main-bg-color);
 }
 
 .blink{
@@ -106,6 +142,8 @@ body, .background{
   animation:
   fade-in 3s
 }
+
+
 
 .about-snippet{
   background-color: var(--second-bg-color);
@@ -126,26 +164,31 @@ p{
 
 .info-button{
   font-family: 'Doppio One', sans-serif;
-  font-size: 2vw;
+  font-size: 6vh;
   color: var(--second-text-color);
-  width: 100% auto;
+  width: 30vh;
+  text-align: center;
   /*height: 3em;*/
   background-color: var(--second-bg-color);
-  padding: 1%;
-  margin: 0.3%;
-  box-shadow: 2px 2px 2px black;
   cursor: pointer;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  z-index: 10;
+  padding: 5%;
 }
 
 .info-button:hover{
-  border-left-style: solid;
-  border-left-width: 1em;
-  border-left-color: var(--color-3);
+  background-color: var(--color-3);
   /*margin-left: 1em;*/
+}
+
+
+
+
+.button-container{
+  position: absolute;
+  right: 0;
 }
 
 
@@ -284,7 +327,9 @@ a{
 }
 
 .contact img, .contact svg{
-  padding: 1vw;
+  padding: 3vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   height: 6vw;
   width: 6vw;
      fill: var(--color-6);
@@ -295,6 +340,12 @@ a{
   flex-direction: column;
   align-items: center;
   color: var(--color-6)
+}
+
+.contact a:hover, .contact img:hover, .contact svg:hover{
+  color: var(--color-3);
+  fill: var(--color-3);
+  border-radius: 5%
 }
 
 
@@ -309,6 +360,21 @@ a{
 .auto_margin{
   margin: auto;
 }
+
+.crop {
+      /*width: 100vh;
+      height: 100vh;*/
+    /*overflow: hidden;*/
+    align-self: center;
+}
+
+.crop img {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    align-self: center;
+}
+
 
 @keyframes typing {
   from { width: 0 }

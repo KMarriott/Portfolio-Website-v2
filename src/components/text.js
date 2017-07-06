@@ -33,7 +33,7 @@ class Text extends Component {
 
 
     return(
-      <div className="flex-column text welcome-body">
+      <div className="flex-column text">
 
       <div className="flex-center">
 

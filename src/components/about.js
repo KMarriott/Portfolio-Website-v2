@@ -23,7 +23,9 @@ class About extends Component {
       // </div>
     }
 
-
+    <div className="crop">
+        <img src={require("../unnamed.jpg")}/>
+    </div>
 
             <div>
             I am a 22 year old young man, living in New York and working as a Web Developer. I have a history or working at large and small companies. My number one priority is completing projects professionally, efficiently and effectively.

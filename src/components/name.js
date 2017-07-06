@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
 
+// <div className="name" onClick = {
+//   //(e) => this.props.handleClick(e, "home")
+// }>
 
 class Name extends Component {
   render(){
     return(
-      <div>
-      <div className="name" onClick = {(e) => this.props.handleClick(e, "home")}>
-      <div className="blink">Khem Marriott <img className="w-lion flex-center" src={require("../lion_icon_w.svg")}/>
-    </div>
-        </div>
 
+
+      <div className="name">
+
+
+
+      <div className="blink">Khem Marriott </div>
+
+      <div className="hamburger-container fade-in" onClick={this.props.hamburgerClick.bind(this)}>
+      <div className="hamburger-line"> </div>
+      <div className="hamburger-line"> </div>
+      <div className="hamburger-line"> </div>
+
+      </div>
 
       </div>
     )

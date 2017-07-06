@@ -23,8 +23,21 @@ class App extends Component {
       home_click: true,
       about_click: false,
       project_click: false,
-      contact_click: false
+      contact_click: false,
+      hamburger: true
     }
+
+
+    this.hamburgerClick = function(){
+      this.setState({hamburger: !this.state.hamburger})
+      console.log("ok")
+    }
+
+
+        this.handleMouseOver = function(){
+          this.setState({hamburger: true})
+        }
+
 
     this.handleClick = function(e, type) {
       let new_state = this.state;
@@ -46,22 +59,26 @@ class App extends Component {
 
       this.setState(new_state);
 
-
     }
   }
+
+
 
 
 
   render() {
     console.log(this.state)
     return (
-      <div className="flex-column main-body">
 
-      <Name handleClick={this.handleClick.bind(this)}/>
+      <div className="flex-column main-body">
+      <div >
+      <Name handleClick={this.handleClick.bind(this)} hamburgerClick={this.hamburgerClick.bind(this)}/>
       {
-      <Buttons handleClick={this.handleClick.bind(this)} state={this.state}/>
-      // <Home/>
-      }
+        this.state.hamburger ?
+      ""
+      :
+    <Buttons handleClick={this.handleClick.bind(this)} state={this.state}/>}
+      </div>
 
       {this.state.home_click ? <Text title={"Welcome"}/> : ""}
       {this.state.about_click ? <Text title={"About"}/> : ""}
